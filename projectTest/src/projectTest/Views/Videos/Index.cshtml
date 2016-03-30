@@ -1,0 +1,20 @@
+﻿@using projectTest.Models
+@model IEnumerable<Video>
+
+<div class="container-fluid">
+    <h1>videos</h1>
+    <div class="row">
+        @foreach (var data in Model)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail videos-created">
+                    <a href="/Videos/Watch?videoId=@data.VideoId"><img src="http://placehold.it/200x200"></a>
+                    <div class="caption">
+                        <h5>@data.Name</h5>
+                        <p>@data.UserName</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

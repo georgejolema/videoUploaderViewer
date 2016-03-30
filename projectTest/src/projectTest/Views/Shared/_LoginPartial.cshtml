@@ -1,0 +1,21 @@
+﻿@using System.Security.Claims
+@using projectTest.ViewModel
+@model LoginViewModel
+@if (!User.IsSignedIn())
+{
+    <form asp-action="Login" asp-controller="Account" method="post" class="nav navbar-form navbar-right">
+        <div class="form-group">
+            <input type="text" asp-for="UserName" class="form-control" placeholder="User name" />
+            <input type="password" asp-for="Password" class="form-control" placeholder="Password" />
+        </div>
+        <button class="btn btn-default" type="submit">Login</button>
+    </form>
+}
+else {
+    <form asp-action="LogOff" asp-controller="Account" method="post" class="nav navbar-form navbar-right">
+        <div class="form-group">            
+            <label>Hello</label> @User.GetUserName()!    
+        </div>
+        <button type="submit" class="btn btn-default">Log off</button>
+    </form>
+}

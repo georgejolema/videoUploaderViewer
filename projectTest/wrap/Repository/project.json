@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net452": {
+      "wrappedProject": "../../Repository/Repository.csproj",
+      "bin": {
+        "assembly": "../../Repository/obj/{configuration}/Repository.dll",
+        "pdb": "../../Repository/obj/{configuration}/Repository.pdb"
+      }
+    }
+  }
+}

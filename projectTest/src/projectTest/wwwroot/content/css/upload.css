@@ -1,0 +1,28 @@
+.upload-control .item-upload{
+	width:60%;
+}
+
+.upload-control .block-inline-container{
+	display:inline-block;
+}
+.upload-control li[data-name]{
+	list-style-type:none
+}
+
+.upload-control .progress{
+	padding:0px 10px;
+	margin:0px 10px;
+}
+
+.upload-control .fa-times-circle{
+	font-size:24px;
+	color:red;
+}
+
+.upload-control .fa-pause-circle, .upload-control .play-button, .upload-control .resume-button{
+	font-size:24px;
+}
+
+.upload-control .name-container{
+	width:200px;
+}

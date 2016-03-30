@@ -1,0 +1,20 @@
+﻿@using projectTest.Models
+@model Video
+<script type="text/javascript">var iden = 10;</script>
+<div class="container">
+    <div class="sk-wave" id="wait">
+        <div class="sk-rect sk-rect1"></div>
+        <div class="sk-rect sk-rect2"></div>
+        <div class="sk-rect sk-rect3"></div>
+        <div class="sk-rect sk-rect4"></div>
+        <div class="sk-rect sk-rect5"></div>
+    </div>
+    <input type="hidden" asp-for="Name" class="fileName"/>
+    <input type="hidden" asp-for="UserName" class="userName"/>
+    <div class="embed-responsive embed-responsive-16by9">
+        <video controls id="myvideo" class="hidden">
+            <source id="player" type="video/mp4" />
+        </video>
+    </div>
+  
+</div>
