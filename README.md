@@ -24,3 +24,4 @@ dnvm use 1.0.0-rc1-final -p
 dnx ef migrations add Initial
 dnx ef database update
 ```
+* Localize appSettings.json from the root folder and introduce your telemetry key
