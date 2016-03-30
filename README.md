@@ -7,6 +7,7 @@ This project uses the latest technology that Microsoft is still developing. Belo
 * It accesses a blob storage from Azure to store videos and it uploads them without caching data in the web server.
 * It sends telemetry to application insights of Azure.
 * It uses HTML5 for the video rendering and uses javascript to feed the video control.
+* It implements the easyUpload that I also created and posted in another github repository
 
 This project was created only for development and research purposes and you are free to use, copy and produce with this project.
 
